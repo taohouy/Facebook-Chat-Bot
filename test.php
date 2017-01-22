@@ -33,7 +33,7 @@ if(preg_match('[time|current time|now]', strtolower($message))) {
     $message_to_reply = 'Huh! what do you mean?';
 }
 
-$sender = '100001907613482';
+$sender = 100001907613482;
 $message_to_reply = 'Test';
 
 //API Url
