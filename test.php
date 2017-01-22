@@ -33,11 +33,11 @@ if(preg_match('[time|current time|now]', strtolower($message))) {
     $message_to_reply = 'Huh! what do you mean?';
 }
 
-$sender = 100001907613482;
+$sender = '100001907613482';
 $message_to_reply = 'Test';
 
 //API Url
-$url = 'https://graph.facebook.com/v2.6/me/messages?access_token='.$access_token;
+$url = 'https://graph.facebook.com/v2.8/me/messages?access_token='.$access_token;
 //Initiate cURL.
 $ch = curl_init($url);
 //The JSON data.
