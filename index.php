@@ -30,7 +30,7 @@ $message_to_reply = '';
 /**
  * Some Basic rules to validate incoming messages
  */
-$gmessage = explode("#",$message);
+$gmessage = explode('#',$message);
 
 //if(preg_match('RegisterLibraryAlert', $message)) {
     
