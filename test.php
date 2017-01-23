@@ -22,6 +22,8 @@ $message_to_reply = '';
 /**
  * Some Basic rules to validate incoming messages
  */
+
+
 if(preg_match('[time|current time|now]', strtolower($message))) {
     // Make request to Time API
     ini_set('user_agent','Mozilla/4.0 (compatible; MSIE 6.0)');
@@ -34,7 +36,7 @@ if(preg_match('[time|current time|now]', strtolower($message))) {
 }
 
 $sender = '1290539144347250';
-$message_to_reply = 'Tesกกกกกกt';
+$message_to_reply = $message;
 
 //API Url
 $url = 'https://graph.facebook.com/v2.8/me/messages?access_token='.$access_token;
