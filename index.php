@@ -34,7 +34,7 @@ $getmessage = explode("#",$message);
 
 //if(preg_match('RegisterLibraryAlert', $message)) {
     
-if("RegisterLibraryAlert" == $getmessage[0]){
+if("สมัครบริการแจ้งเตือน" == $getmessage[0]){
  //   $stuid = $gmessage[1];
     // Make request to Time API
     //ini_set('user_agent','Mozilla/4.0 (compatible; MSIE 6.0)');
