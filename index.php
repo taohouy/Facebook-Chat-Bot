@@ -34,7 +34,7 @@ $getmessage = explode("#",$message);
 
 //if(preg_match('RegisterLibraryAlert', $message)) {
     
-//if('RegisterLibraryAlert' == $gmessage[0]) {
+if("RegisterLibraryAlert" == $getmessage[0]){
  //   $stuid = $gmessage[1];
     // Make request to Time API
     //ini_set('user_agent','Mozilla/4.0 (compatible; MSIE 6.0)');
@@ -42,13 +42,13 @@ $getmessage = explode("#",$message);
     //if($result != '') {
    // $message_to_reply = 'ขอบคุณที่สมัครใช้บริการ เราจะคอยส่งข้อมูลข่าวสารดีๆ ให้คุณได้รับทราบ';
      //   $message_to_reply = 'ขอบคุณ "'.$stuid.'" ที่สมัครใช้บริการ เราจะคอยส่งข้อมูลข่าวสารดีๆ ให้คุณได้รับทราบ';
-   $message_to_reply = $getmessage[0];
+   $message_to_reply = $getmessage[1];
     //}
-//} else {
+} else {
   //  $message_to_reply = 'Test 55';
   //  $message_to_reply = 'Huh! what do you mean?';
-  //  $message_to_reply = 'Test '.$sender;
-//}
+    $message_to_reply = 'ขออภัยไม่สามารถลงทะเบียนได้';
+}
 
 //API Url
 $url = 'https://graph.facebook.com/v2.6/me/messages?access_token='.$access_token;
