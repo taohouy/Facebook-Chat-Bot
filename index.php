@@ -29,7 +29,7 @@ $message_to_reply = '';
 /**
  * Some Basic rules to validate incoming messages
  */
-//$gmessage = explode(":",strtolower($message));
+$gmessage = explode(":",$message);
 //if('สมัครบริการแจ้งเตือน'==$gmessage[0])) {
   //  $stuid = $gmessage[1];
     // Make request to Time API
@@ -39,7 +39,7 @@ $message_to_reply = '';
    //     $message_to_reply = 'ขอบคุณ "'.$stuid.'" ที่สมัครใช้บริการ เราจะคอยส่งข้อมูลข่าวสารดีๆ ให้คุณได้รับทราบ';
     //}
 //} else {
-    $message_to_reply = 'T '.$sender.' '.$message;
+    $message_to_reply = 'T '.$gmessage[1];
   //  $message_to_reply = 'Huh! what do you mean?';
   //  $message_to_reply = 'Test '.$sender;
 //}
