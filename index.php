@@ -34,7 +34,7 @@ $gmessage = explode('#',$message);
 
 //if(preg_match('RegisterLibraryAlert', $message)) {
     
-if('RegisterLibraryAlert' === $message) {
+if('RegisterLibraryAlert' == $message) {
     //$stuid = $gmessage[1];
     // Make request to Time API
     //ini_set('user_agent','Mozilla/4.0 (compatible; MSIE 6.0)');
@@ -47,7 +47,7 @@ if('RegisterLibraryAlert' === $message) {
     $message_to_reply = 'Test ';
   //  $message_to_reply = 'Huh! what do you mean?';
   //  $message_to_reply = 'Test '.$sender;
-//}
+}
 
 //API Url
 $url = 'https://graph.facebook.com/v2.6/me/messages?access_token='.$access_token;
