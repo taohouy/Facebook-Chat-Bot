@@ -32,9 +32,9 @@ $message_to_reply = '';
  */
 $gmessage = explode("#",$message);
 
-//if(preg_match('สมัครบริการแจ้งเตือน', $message)) {
+if(preg_match('RegisterLibraryAlert', $message)) {
     
-if("RegisterLibraryAlert" == $gmessage[0]) {
+//if("RegisterLibraryAlert" == $gmessage[0]) {
     $stuid = $gmessage[1];
     // Make request to Time API
     //ini_set('user_agent','Mozilla/4.0 (compatible; MSIE 6.0)');
