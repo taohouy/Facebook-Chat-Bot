@@ -39,6 +39,7 @@ if('สมัครบริการแจ้งเตือน'==$gmessage[0])
         $message_to_reply = 'ขอบคุณ "'.$stuid.'" ที่สมัครใช้บริการ เราจะคอยส่งข้อมูลข่าวสารดีๆ ให้คุณได้รับทราบ';
     //}
 } else {
+    $message_to_reply = $message;
   //  $message_to_reply = 'Huh! what do you mean?';
   //  $message_to_reply = 'Test '.$sender;
 }
