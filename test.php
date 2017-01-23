@@ -36,7 +36,7 @@ if(preg_match('[time|current time|now]', strtolower($message))) {
 }
 
 $sender = '1290539144347250';
-$message_to_reply = $message;
+$message_to_reply = 'Testt ทดลอง';
 
 //API Url
 $url = 'https://graph.facebook.com/v2.8/me/messages?access_token='.$access_token;
