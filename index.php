@@ -30,11 +30,11 @@ $message_to_reply = '';
 /**
  * Some Basic rules to validate incoming messages
  */
-$gmessage = explode(":",$message);
+$gmessage = explode("#",$message);
 
 //if(preg_match('สมัครบริการแจ้งเตือน', $message)) {
     
-if("RegisterMJUAlert" == $gmessage[0]) {
+if("RegisterLibraryAlert" == $gmessage[0]) {
     $stuid = $gmessage[1];
     // Make request to Time API
     //ini_set('user_agent','Mozilla/4.0 (compatible; MSIE 6.0)');
