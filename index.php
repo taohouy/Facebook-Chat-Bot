@@ -30,7 +30,7 @@ $message_to_reply = '';
 /**
  * Some Basic rules to validate incoming messages
  */
-$gmessage = explode('#',$message);
+$getmessage = explode("#",$message);
 
 //if(preg_match('RegisterLibraryAlert', $message)) {
     
@@ -42,7 +42,7 @@ $gmessage = explode('#',$message);
     //if($result != '') {
    // $message_to_reply = 'ขอบคุณที่สมัครใช้บริการ เราจะคอยส่งข้อมูลข่าวสารดีๆ ให้คุณได้รับทราบ';
      //   $message_to_reply = 'ขอบคุณ "'.$stuid.'" ที่สมัครใช้บริการ เราจะคอยส่งข้อมูลข่าวสารดีๆ ให้คุณได้รับทราบ';
-   $message_to_reply = $message;
+   $message_to_reply = $getmessage[0];
     //}
 //} else {
   //  $message_to_reply = 'Test 55';
