@@ -1,4 +1,5 @@
 <?php
+header('Content-Type: text/html; charset=utf-8');
 /**
  * Webhook for Time Bot- Facebook Messenger Bot
  * User: adnan
