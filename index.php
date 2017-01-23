@@ -31,7 +31,7 @@ $message_to_reply = '';
  */
 $gmessage = explode(":",$message);
 
-if(preg_match('สมัครบริการแจ้งเตือน', $gmessage[0])) {
+if(preg_match("สมัครบริการแจ้งเตือน", $gmessage[0])) {
     
 //if(preg_match"สมัครบริการแจ้งเตือน" === $gmessage[0])) {
     $stuid = $gmessage[1];
